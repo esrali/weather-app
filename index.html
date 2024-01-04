@@ -1,0 +1,130 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Weather</title>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light px-5  ">
+            <div class="container">
+                <a class="navbar-brand " href="#"> <img src="img/img1.png" title="=weather" alt="cloud" class="me-2 img-fluid">Weather</a>
+                <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-3  ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Live cameras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header id="home" class="">
+            <div class="container">
+                <form>
+                    <input class="form-control" type="text" placeholder="find your location" id="search" name="cityName">
+                    <button class=" btn btn-find" id="press">Find</button>
+                </form>
+                <div class="row mt-4">
+                    <div class="col-lg-4 p-0" id="today">
+                        <div class="d-flex justify-content-between align-items-center px-2 py-2 pb-0 fs-6 head">
+                            <p class="mb-1" id="firstDay"></p>
+                            <p class="mb-1" id="currentMonth"></p>
+                        </div>
+                        <div class="p-1">
+                            <p class="fs-5 pt-4 px-4" id="country"></p>
+                            <div class="d-flex justify-content-around align-items-center">
+                                <h1 class="c" id="maxTemp1"></h1>
+                                <img  class="img-fluid cloud">
+                            </div>
+                            <p class=" p-4 pt-4 state" id="state1"></p>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="d-flex ms-3">
+                                    <img src="img/img4.png" class="img-fluid photo me-1">
+                                    <p>20%</p>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="img/img5.png" class="img-fluid photo me-1">
+                                    <p>18km/h</p>
+                                </div>
+                                <div class="d-flex" >
+                                    <img src="img/img6.png" class="img-fluid photo me-1">
+                                    <p>East</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-0" id="second">
+                        <div class="d-flex justify-content-center align-items-center px-2 py-2 pb-0 fs-6 head">
+                            <p class="mb-1" id="secondDay"></p>
+                        </div>
+                        <div class="text-center mt-2">
+                            <img class="img-fluid " id="imgDay2">
+                        </div>
+                        <div class="">
+                            <div class=" text-center">
+                                <h1 class="text-white h3 fw-semibold mt-4 " id="temp2"></h1>
+                                <p class="p" id="minTemp"></p>
+                            </div>
+                            <p class=" p-4 pt-3 state text-center " id="state2"></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-0" id="third">
+                        <div class="text-center px-2 py-2 pb-0 fs-6 head">
+                            <p class="mb-1" id="thirdDay"></p>
+                        </div>
+                        <div class="text-center mt-2">
+                            <img class="img-fluid " id="img3">
+                        </div>
+                        <div class="">
+                            <div class=" text-center">
+                                <h1 class="text-white h3 fw-semibold mt-4 " id="temp3"></h1>
+                                <p class="p" id="minTemp3"></p>
+                            </div>
+                            <p class=" p-4 pt-3 state text-center" id="state3"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <footer class="p-2">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <form class="">
+                            <input class="form-control" type="text" placeholder="enter your email to Subscribe">
+                            <button class=" btn btn-find">Subscribe</button>
+                        </form>
+                        <p class="text-white-50 px-5 pt-4 pb-4 fs-6 ">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <ul>
+                            <i class="fa-brands fa-facebook-f ii ms-5"></i>
+                            <i class="fa-brands fa-twitter ii"></i>
+                            <i class="fa-brands  fa-google-plus ii "></i>
+                            <i class="fa-brands fa-pinterest ii"></i>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/all.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
